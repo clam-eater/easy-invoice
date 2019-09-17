@@ -1,0 +1,37 @@
+.roundButton {
+  position: relative;
+  background-color: #ffccd3; /* salmon pink */
+  border: none;
+  font-size: 12px;
+  color: #FFFFFF;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 8px;
+  margin: 5px;
+}
+
+.roundButton:after {
+  content: "";
+  background: #f1f1f1;
+  display: inline-block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.roundButton:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}

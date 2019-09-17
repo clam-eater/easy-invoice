@@ -1,0 +1,34 @@
+{
+  "manifest_version": 2,
+
+  "name": "setup-invoices plugin",
+  "description": "This extension will take data from a google spreadsheet and set up an invoice",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["https://docs.google.com/spreadsheets/*/*"],
+      "js": ["jquery-3.4.1.js", "content_script.js"]
+    },
+    {
+      "matches": ["https://www.paypal.com/invoice/create/*"],
+      "js": ["jquery-3.4.1.js", "content_script_PP.js"]
+    }
+  ],
+
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "storage"
+  ]
+}

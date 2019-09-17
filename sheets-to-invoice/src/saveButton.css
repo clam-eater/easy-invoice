@@ -1,0 +1,14 @@
+.saveButton {
+  background-color: #ffccd3;
+  border: none;
+  color: white;
+  width: 40px;
+  height: 20px;
+  text-align: center;
+  font-size: 12px;
+  opacity: 1;
+  transition: 0.4s;
+  border-radius: 15%;
+}
+
+.saveButton:hover {opacity: 0.6}

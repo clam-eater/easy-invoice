@@ -1,0 +1,15 @@
+.lineLessInput {
+  border:none;
+  width: 70px;
+  background: #ffccd3;
+  border: 2px solid #f598a6;
+  color: #FFFFFF;
+}
+
+.lineLessInput:focus {
+  outline: none;
+}
+
+.lineLessInput::placeholder {
+  color: #FFFFFF;
+}

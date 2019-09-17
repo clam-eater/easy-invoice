@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="roundButton.css">
+    <link rel="stylesheet" type="text/css" href="circleButton.css">
+    <link rel="stylesheet" type="text/css" href="lineLessInput.css">
+    <link rel="stylesheet" type="text/css" href="invisibleSubmit.css">
+    <link rel="stylesheet" type="text/css" href="saveButton.css">
+    <link rel="stylesheet" type="text/css" href="displayFade.css">
+    <link rel="stylesheet" type="text/css" href="tooltip.css">
+    <meta charset="UTF-8">
+    <title>Setup Invoices</title>
+    <script src="popup.js"></script>
+</head>
+<body>
+    <h1>Setup Invoices</h1>
+    <form>
+        Max number of rows:<br>
+        <input type="text" id="rows" />
+        <input type="submit" value="Submit" id="enter" />
+        <br>
+        <br>
+        <button type="button" id="resetInput">Reset Inputs</button>
+        <button type="button" id="viewCatalogue">View Current Catalogue</button>
+        <br>
+        <br>
+        <input class="lineLessInput" type="text" id="catalogueInput" placeholder="add an item"/>
+        <input class="lineLessInput" type="number" min="0.00" step="0.01" max="9,999.99" id="cataloguePrice" placeholder="cost"/> <br>
+        <textarea id="detailedDes" rows="4" cols="20" placeholder="Detailed description..."></textarea>
+        <br>
+        <input type="submit" value="Submit" id="submit" />
+        <p id="userInfo"></p>
+
+        <button type="button" id="grabCell" class="roundButton">View unsent invoices</button>
+        <br>
+        <button type="button" id="viewSettings" style="border: 0; background:transparent">
+            <img src="Windows_Settings_app_icon.png" width="20" height="20" /></button>
+    </form>
+</body>
+</html>
